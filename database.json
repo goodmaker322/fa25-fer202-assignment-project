@@ -1,0 +1,183 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Landing Page",
+      "description": "Thiết kế trang đích chuyển đổi cao cho doanh nghiệp",
+      "price": 5000000,
+      "priceText": "Từ 5,000,000 VNĐ",
+      "duration": "7-10 ngày",
+      "features": [
+        "Thiết kế responsive",
+        "Tối ưu SEO cơ bản",
+        "Form liên hệ",
+        "Tích hợp Google Analytics"
+      ],
+      "icon": "🎯",
+      "category": "basic",
+      "popular": false
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "name": "Gói Cơ Bản",
+      "price": 5000000,
+      "priceText": "5,000,000 VNĐ",
+      "duration": "7-14 ngày",
+      "description": "Phù hợp cho startup và doanh nghiệp nhỏ",
+      "features": [
+        "1-3 trang web",
+        "Thiết kế responsive",
+        "SEO cơ bản",
+        "1 lần sửa đổi",
+        "Hỗ trợ 30 ngày"
+      ],
+      "limitations": [
+        "Không bao gồm e-commerce",
+        "Không có tích hợp thanh toán"
+      ],
+      "popular": false,
+      "color": "primary"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "title": "Website Thương Mại Điện Tử ABC Store",
+      "client": "ABC Company",
+      "industry": "E-commerce",
+      "projectType": "E-commerce",
+      "completedDate": "2024-01-15",
+      "description": "Website bán hàng online với hệ thống thanh toán đa dạng",
+      "imageUrl": "/images/portfolio/abc-store.jpg",
+      "thumbnailUrl": "/images/portfolio/thumbnails/abc-store-thumb.jpg",
+      "liveUrl": "https://abc-store.com",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+      "features": [
+        "Giỏ hàng thông minh",
+        "Thanh toán trực tuyến",
+        "Quản lý đơn hàng",
+        "Hệ thống review sản phẩm"
+      ],
+      "results": [
+        "Tăng 150% doanh số online",
+        "Giảm 40% tỷ lệ thoát trang",
+        "Tăng 200% thời gian người dùng ở lại"
+      ],
+      "category": "ecommerce",
+      "featured": true
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "clientName": "Nguyễn Văn A",
+      "clientPosition": "CEO",
+      "companyName": "ABC Technology",
+      "industry": "Technology",
+      "rating": 5,
+      "review": "Đội ngũ thiết kế rất chuyên nghiệp, website được bàn giao đúng hạn và chất lượng vượt mong đợi. Doanh số online của chúng tôi tăng 200% sau khi ra mắt website mới.",
+      "projectType": "Corporate Website",
+      "completedDate": "2024-02-10",
+      "avatarUrl": "/images/testimonials/nguyen-van-a.jpg",
+      "featured": true,
+      "results": {
+        "salesIncrease": "200%",
+        "trafficBoost": "300%",
+        "conversionRate": "15%"
+      }
+    }
+  ],
+  "workflowSteps": [
+    {
+      "id": 1,
+      "step": 1,
+      "title": "Tư Vấn & Phân Tích",
+      "description": "Gặp gỡ, tìm hiểu nhu cầu và phân tích yêu cầu dự án chi tiết",
+      "duration": "1-2 ngày",
+      "deliverables": [
+        "Báo cáo phân tích yêu cầu",
+        "Proposal chi tiết",
+        "Timeline dự án"
+      ],
+      "icon": "💬",
+      "color": "primary"
+    }
+  ],
+  "companyInfo": {
+    "name": "WebDesign Pro",
+    "tagline": "Thiết kế website chuyên nghiệp, chuyển đổi cao",
+    "description": "Chúng tôi chuyên tạo ra những website đẹp, hiệu quả và thân thiện với người dùng cho các doanh nghiệp Việt Nam.",
+    "founded": "2019",
+    "experience": "5+ năm",
+    "projectsCompleted": 150,
+    "clientsServed": 120,
+    "teamSize": 12,
+    "contact": {
+      "phone": "+84 123 456 789",
+      "email": "info@webdesignpro.vn",
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "website": "https://webdesignpro.vn"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/webdesignpro",
+      "instagram": "https://instagram.com/webdesignpro",
+      "linkedin": "https://linkedin.com/company/webdesignpro"
+    },
+    "workingHours": "T2-T6: 9:00-18:00, T7: 9:00-12:00"
+  },
+  "technologies": [
+    {
+      "id": 1,
+      "name": "React",
+      "category": "Frontend",
+      "description": "Thư viện JavaScript hiện đại cho UI tương tác",
+      "iconUrl": "/images/tech/react.png",
+      "proficiency": 95,
+      "yearsUsed": 4
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "Thời gian hoàn thành một website thường là bao lâu?",
+      "answer": "Tùy thuộc vào độ phức tạp của dự án, thời gian hoàn thành dao động từ 7-45 ngày. Website cơ bản (1-5 trang) mất 7-14 ngày, e-commerce phức tạp có thể mất 30-45 ngày.",
+      "category": "timeline",
+      "popular": true
+    }
+  ],
+  "contactRequests": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn B",
+      "email": "nguyenvanb@example.com",
+      "phone": "0123456789",
+      "company": "XYZ Corp",
+      "projectType": "E-commerce",
+      "budget": "20000000",
+      "budgetText": "15-25 triệu",
+      "message": "Tôi cần thiết kế website bán hàng online cho công ty. Vui lòng liên hệ tư vấn.",
+      "status": "new",
+      "priority": "medium",
+      "submittedAt": "2024-12-16T10:30:00Z",
+      "source": "website_form"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "10 Xu Hướng Thiết Kế Website 2024",
+      "slug": "xu-huong-thiet-ke-website-2024",
+      "excerpt": "Khám phá những xu hướng thiết kế website mới nhất năm 2024 để tạo ra trải nghiệm người dùng tốt nhất.",
+      "content": "Nội dung bài viết đầy đủ...",
+      "authorName": "Nguyễn Thiết Kế",
+      "publishedAt": "2024-12-01T09:00:00Z",
+      "imageUrl": "/images/blog/xu-huong-2024.jpg",
+      "tags": ["design", "trends", "2024", "ui-ux"],
+      "category": "Design Tips",
+      "readTime": 8,
+      "featured": true
+    }
+  ]
+}

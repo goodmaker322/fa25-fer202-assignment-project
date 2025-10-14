@@ -1,0 +1,5781 @@
+/* Header Styles */
+.seogo-header {
+  position: relative;
+  z-index: 1050;
+}
+
+.seogo-navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+/* Logo Styles */
+.seogo-logo-brand {
+  text-decoration: none !important;
+  color: #333 !important;
+}
+
+.seogo-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.seogo-logo-image {
+  border-radius: 4px;
+}
+
+.seogo-logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+/* Navigation Menu */
+.seogo-nav-menu {
+  margin-left: 2rem;
+}
+
+.seogo-nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.25rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.seogo-nav-link:hover {
+  color: #007bff !important;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.seogo-nav-active {
+  color: #007bff !important;
+  background-color: rgba(0, 123, 255, 0.1);
+  font-weight: 600;
+}
+
+/* CTA Buttons */
+.seogo-header-cta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.seogo-btn-quote {
+  border-color: #007bff;
+  color: #007bff;
+  font-weight: 500;
+  padding: 0.375rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.seogo-btn-quote:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.seogo-btn-contact {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.375rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.seogo-btn-contact:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Mobile Toggle */
+.seogo-navbar-toggle {
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.seogo-toggle-icon {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.3s;
+  border-radius: 1px;
+}
+
+/* Mobile Styles */
+@media (max-width: 991.98px) {
+  .seogo-nav-menu {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .seogo-header-cta {
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .seogo-btn-quote,
+  .seogo-btn-contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .seogo-nav-link {
+    margin: 0.25rem 0;
+  }
+}
+
+/* Sticky Header Effect */
+.seogo-navbar.sticky {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Footer Styles */
+.seogo-footer {
+  margin-top: auto;
+}
+
+.seogo-footer-main {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 3rem 0 2rem;
+}
+
+.seogo-footer-bottom {
+  background-color: #0d0d0d;
+  padding: 1rem 0;
+  border-top: 1px solid #333;
+}
+
+/* Footer Brand */
+.seogo-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.seogo-footer-logo {
+  border-radius: 4px;
+}
+
+.seogo-footer-brand-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.seogo-footer-description {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer Sections */
+.seogo-footer-section {
+  margin-bottom: 2rem;
+}
+
+.seogo-footer-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Footer Links */
+.seogo-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seogo-footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.seogo-footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.seogo-footer-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Social Links */
+.seogo-footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.seogo-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #ccc;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.seogo-social-link:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Contact Info */
+.seogo-contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.seogo-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.seogo-contact-icon {
+  color: #007bff;
+  width: 16px;
+  flex-shrink: 0;
+}
+
+.seogo-contact-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.seogo-contact-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Footer CTA */
+.seogo-footer-cta {
+  margin-top: 1rem;
+}
+
+.seogo-footer-btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.seogo-footer-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Footer Bottom */
+.seogo-copyright p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.seogo-footer-legal {
+  text-align: right;
+}
+
+.seogo-legal-link {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.seogo-legal-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.seogo-divider {
+  color: #555;
+  margin: 0 0.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-footer-main {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .seogo-footer-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .seogo-footer-legal {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  .seogo-footer-social {
+    justify-content: flex-start;
+  }
+}
+/* Main Layout Styles */
+.seogo-main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.seogo-main-content {
+  flex: 1;
+  padding-top: 76px; /* Account for fixed header height */
+  position: relative;
+}
+
+.seogo-content-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 76px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .seogo-main-content {
+    padding-top: 70px; /* Adjust for smaller header on mobile */
+  }
+
+  .seogo-content-wrapper {
+    min-height: calc(100vh - 70px);
+  }
+}
+
+/* Additional layout utilities */
+.seogo-page-container {
+  padding: 2rem 0;
+}
+
+.seogo-page-header {
+  margin-bottom: 2rem;
+}
+
+.seogo-page-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-page-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Section spacing utilities */
+.seogo-section {
+  padding: 4rem 0;
+}
+
+.seogo-section-sm {
+  padding: 2rem 0;
+}
+
+.seogo-section-lg {
+  padding: 6rem 0;
+}
+
+/* Hero Banner Styles */
+.seogo-hero-banner {
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+
+.seogo-hero-content {
+  z-index: 2;
+  position: relative;
+}
+
+.seogo-hero-text {
+  animation: fadeInUp 1s ease-out;
+}
+
+.seogo-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.seogo-hero-highlight {
+  color: #ffd700;
+  position: relative;
+}
+
+.seogo-hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Hero Features */
+.seogo-hero-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.seogo-hero-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.seogo-feature-icon {
+  color: #28a745;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Hero CTA */
+.seogo-hero-cta {
+  margin: 2.5rem 0;
+}
+
+.seogo-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.seogo-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.seogo-btn-secondary {
+  border-color: white;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.seogo-btn-secondary:hover {
+  background-color: white;
+  color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Stats */
+.seogo-hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.seogo-stat-item {
+  text-align: center;
+}
+
+.seogo-stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffd700;
+  line-height: 1;
+}
+
+.seogo-stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.25rem;
+}
+
+/* Hero Visual */
+.seogo-hero-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.seogo-hero-image-container {
+  position: relative;
+  animation: fadeInRight 1s ease-out 0.3s both;
+}
+
+.seogo-hero-mockup {
+  text-align: center;
+  position: relative;
+}
+
+.seogo-hero-mockup-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
+  transition: transform 0.3s ease;
+}
+
+.seogo-hero-mockup-img:hover {
+  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+}
+
+/* Floating Elements */
+.seogo-floating-element {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+}
+
+.seogo-float-1 {
+  top: 20%;
+  right: -10%;
+  animation-delay: 0s;
+}
+
+.seogo-float-2 {
+  bottom: 30%;
+  left: -15%;
+  animation-delay: 2s;
+}
+
+.seogo-float-3 {
+  top: 60%;
+  right: 10%;
+  animation-delay: 4s;
+}
+
+.seogo-float-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.seogo-float-icon {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+/* Background Shapes */
+.seogo-hero-bg-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.seogo-bg-shape {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+}
+
+.seogo-shape-1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.seogo-shape-2 {
+  width: 150px;
+  height: 150px;
+  top: 70%;
+  right: 20%;
+  animation-delay: 3s;
+}
+
+.seogo-shape-3 {
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  left: 70%;
+  animation-delay: 6s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+  .seogo-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .seogo-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .seogo-hero-stats {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .seogo-hero-cta {
+    text-align: center;
+  }
+
+  .seogo-btn-primary,
+  .seogo-btn-secondary {
+    margin: 0.5rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .seogo-floating-element {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .seogo-hero-title {
+    font-size: 2rem;
+  }
+
+  .seogo-hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+/* Project Showcase Styles */
+.seogo-project-showcase {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+/* Section Header */
+.seogo-section-header {
+  margin-bottom: 3rem;
+}
+
+.seogo-section-badge {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.seogo-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.seogo-section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Filter Buttons */
+.seogo-filter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.seogo-filter-btn {
+  background: white;
+  border: 2px solid #e9ecef;
+  color: #666;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seogo-filter-btn:hover {
+  border-color: #007bff;
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.seogo-filter-active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.seogo-filter-count {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Project Cards */
+.seogo-project-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.seogo-project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Image */
+.seogo-project-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.seogo-project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.seogo-project-card:hover .seogo-project-img {
+  transform: scale(1.1);
+}
+
+/* Project Overlay */
+.seogo-project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 123, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.seogo-project-card:hover .seogo-project-overlay {
+  opacity: 1;
+}
+
+.seogo-project-actions {
+  text-align: center;
+}
+
+.seogo-btn-preview,
+.seogo-btn-details {
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.seogo-btn-preview:hover,
+.seogo-btn-details:hover {
+  transform: translateY(-2px);
+}
+
+/* Featured Badge */
+.seogo-featured-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Project Content */
+.seogo-project-content {
+  padding: 1.5rem;
+}
+
+.seogo-project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.seogo-project-category {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.seogo-project-client {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.seogo-project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.seogo-project-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Technology Badges */
+.seogo-project-technologies {
+  margin-top: 1rem;
+}
+
+.seogo-tech-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #6c757d !important;
+  border-radius: 10px;
+}
+
+/* View More Button */
+.seogo-btn-view-more {
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.seogo-btn-view-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-project-showcase {
+    padding: 4rem 0;
+  }
+
+  .seogo-section-title {
+    font-size: 2rem;
+  }
+
+  .seogo-filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seogo-filter-btn {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+  }
+
+  .seogo-project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .seogo-project-image {
+    height: 200px;
+  }
+}
+/* Client Reviews Styles */
+.seogo-client-reviews {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Featured Review */
+.seogo-featured-review {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.seogo-review-main-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  background: white;
+  overflow: hidden;
+}
+
+.seogo-review-main-content {
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Quote Styles */
+.seogo-review-quote {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.seogo-quote-icon {
+  font-size: 2rem;
+  color: #007bff;
+  opacity: 0.3;
+}
+
+.seogo-review-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  font-weight: 300;
+}
+
+/* Rating Stars */
+.seogo-review-rating {
+  margin-bottom: 2rem;
+}
+
+.seogo-star {
+  font-size: 1.5rem;
+  margin: 0 0.25rem;
+}
+
+.seogo-star-filled {
+  color: #ffc107;
+}
+
+.seogo-star-empty {
+  color: #e9ecef;
+}
+
+/* Author Info */
+.seogo-review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.seogo-author-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.seogo-author-info {
+  text-align: left;
+}
+
+.seogo-author-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.seogo-author-position {
+  color: #666;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.seogo-project-type {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Navigation Dots */
+.seogo-review-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.seogo-nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #dee2e6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.seogo-nav-dot:hover {
+  background-color: #007bff;
+  transform: scale(1.2);
+}
+
+.seogo-nav-active {
+  background-color: #007bff;
+  transform: scale(1.3);
+}
+
+/* Review Cards Grid */
+.seogo-review-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.seogo-review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.seogo-review-card-content {
+  padding: 2rem;
+}
+
+.seogo-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.seogo-review-rating-small .seogo-star {
+  font-size: 1rem;
+  margin: 0 0.1rem;
+}
+
+.seogo-review-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.seogo-review-text-small {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.seogo-review-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.seogo-avatar-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f8f9fa;
+}
+
+.seogo-author-name-small {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.seogo-author-company {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Review Stats */
+.seogo-review-stats {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.seogo-review-stats .seogo-stat-item {
+  padding: 1rem;
+}
+
+.seogo-review-stats .seogo-stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff;
+  line-height: 1;
+}
+
+.seogo-review-stats .seogo-stat-label {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-client-reviews {
+    padding: 4rem 0;
+  }
+
+  .seogo-review-main-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-review-text {
+    font-size: 1.2rem;
+  }
+
+  .seogo-review-author {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .seogo-author-info {
+    text-align: center;
+  }
+
+  .seogo-author-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .seogo-review-stats {
+    padding: 2rem 1rem;
+  }
+
+  .seogo-review-stats .seogo-stat-number {
+    font-size: 2rem;
+  }
+}
+/* Pricing Plans Styles */
+.seogo-pricing-plans {
+  padding: 6rem 0;
+  background-color: #fff;
+}
+
+/* Billing Toggle */
+.seogo-billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.seogo-billing-label {
+  font-weight: 500;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.seogo-billing-label.seogo-active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.seogo-toggle-switch {
+  position: relative;
+  display: inline-block;
+}
+
+.seogo-toggle-input {
+  display: none;
+}
+
+.seogo-toggle-label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seogo-toggle-slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.seogo-toggle-input:checked + .seogo-toggle-label {
+  background-color: #007bff;
+}
+
+.seogo-toggle-input:checked + .seogo-toggle-label .seogo-toggle-slider {
+  transform: translateX(30px);
+}
+
+.seogo-save-badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Pricing Cards */
+.seogo-pricing-card {
+  border: 2px solid #f1f3f4;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+}
+
+.seogo-pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: #007bff;
+}
+
+.seogo-popular-plan {
+  border-color: #28a745;
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(40, 167, 69, 0.2);
+}
+
+.seogo-popular-plan:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+/* Popular Badge */
+.seogo-popular-badge {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.seogo-most-popular {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 15px 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Card Body */
+.seogo-pricing-body {
+  padding: 2rem;
+}
+
+.seogo-popular-plan .seogo-pricing-body {
+  padding-top: 3rem;
+}
+
+/* Plan Header */
+.seogo-plan-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.seogo-plan-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-plan-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Price Section */
+.seogo-price-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.seogo-price-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-currency {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-right: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.seogo-price-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+}
+
+.seogo-savings-info {
+  margin: 0.5rem 0;
+}
+
+.seogo-original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.seogo-savings-badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.seogo-price-period {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Features List */
+.seogo-plan-features {
+  margin-bottom: 2rem;
+}
+
+.seogo-feature-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+}
+
+.seogo-feature-disabled {
+  opacity: 0.5;
+}
+
+.seogo-check-icon {
+  color: #28a745;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.seogo-times-icon {
+  color: #dc3545;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.seogo-feature-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Plan Details */
+.seogo-plan-details {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f3f4;
+}
+
+.seogo-detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.seogo-detail-icon {
+  color: #007bff;
+  margin-right: 0.5rem;
+  width: 16px;
+}
+
+/* CTA Section */
+.seogo-plan-cta {
+  text-align: center;
+}
+
+.seogo-plan-btn {
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.seogo-plan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.seogo-cta-note {
+  margin-top: 0.5rem;
+}
+
+/* Custom Quote Section */
+.seogo-custom-quote {
+  margin-top: 3rem;
+}
+
+.seogo-quote-card {
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+}
+
+.seogo-quote-content {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.seogo-quote-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.seogo-quote-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.seogo-quote-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.seogo-quote-btn {
+  background-color: white;
+  border-color: white;
+  color: #667eea;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.seogo-quote-btn:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-pricing-plans {
+    padding: 4rem 0;
+  }
+
+  .seogo-billing-toggle {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .seogo-popular-plan {
+    transform: none;
+    margin-bottom: 2rem;
+  }
+
+  .seogo-popular-plan:hover {
+    transform: translateY(-5px);
+  }
+
+  .seogo-price-amount {
+    font-size: 2rem;
+  }
+
+  .seogo-quote-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-quote-title {
+    font-size: 1.5rem;
+  }
+}
+/* Service Packages Styles */
+.seogo-service-packages {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+/* Service Cards */
+.seogo-service-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+  background: white;
+}
+
+.seogo-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.seogo-popular-service {
+  border: 2px solid #28a745;
+  transform: scale(1.02);
+}
+
+.seogo-popular-service:hover {
+  transform: scale(1.02) translateY(-10px);
+}
+
+/* Popular Badge */
+.seogo-popular-badge {
+  position: absolute;
+  top: -1px;
+  right: 20px;
+  z-index: 10;
+}
+
+.seogo-most-popular {
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 15px 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Service Body */
+.seogo-service-body {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.seogo-popular-service .seogo-service-body {
+  padding-top: 3rem;
+}
+
+/* Service Icon */
+.seogo-service-icon {
+  margin-bottom: 2rem;
+}
+
+.seogo-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.seogo-icon-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.seogo-icon-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.seogo-icon-info {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: white;
+}
+
+.seogo-icon-warning {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  color: white;
+}
+
+.seogo-icon-dark {
+  background: linear-gradient(135deg, #343a40, #23272b);
+  color: white;
+}
+
+.seogo-icon-secondary {
+  background: linear-gradient(135deg, #6c757d, #545b62);
+  color: white;
+}
+
+.seogo-service-card:hover .seogo-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Service Header */
+.seogo-service-header {
+  margin-bottom: 1.5rem;
+}
+
+.seogo-service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-service-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* Service Description */
+.seogo-service-description {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Service Features */
+.seogo-service-features {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.seogo-features-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.seogo-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seogo-feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.seogo-check-icon {
+  color: #28a745;
+  margin-right: 0.75rem;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.seogo-feature-text {
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Service Details */
+.seogo-service-details {
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f3f4;
+}
+
+.seogo-detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.seogo-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.seogo-detail-icon {
+  color: #007bff;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.seogo-detail-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.seogo-detail-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.seogo-detail-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Service CTA */
+.seogo-service-cta {
+  text-align: center;
+}
+
+.seogo-service-btn {
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.seogo-service-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.seogo-service-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.seogo-service-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* Bottom CTA Section */
+.seogo-services-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  color: white;
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+}
+
+.seogo-cta-content {
+  text-align: center;
+}
+
+.seogo-cta-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.seogo-cta-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.seogo-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.seogo-cta-btn {
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.seogo-cta-btn.btn-primary {
+  background-color: white;
+  border-color: white;
+  color: #667eea;
+}
+
+.seogo-cta-btn.btn-primary:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+.seogo-cta-btn.btn-outline-primary {
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+.seogo-cta-btn.btn-outline-primary:hover {
+  background-color: white;
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-service-packages {
+    padding: 4rem 0;
+  }
+
+  .seogo-service-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-popular-service {
+    transform: none;
+    margin-bottom: 1rem;
+  }
+
+  .seogo-popular-service:hover {
+    transform: translateY(-5px);
+  }
+
+  .seogo-detail-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .seogo-detail-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .seogo-detail-content {
+    text-align: center;
+  }
+
+  .seogo-services-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-cta-title {
+    font-size: 1.5rem;
+  }
+
+  .seogo-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seogo-cta-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seogo-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .seogo-service-title {
+    font-size: 1.25rem;
+  }
+}
+/* Workflow Steps Styles */
+.seogo-workflow-steps {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Progress Container */
+.seogo-progress-container {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.seogo-workflow-progress {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.seogo-workflow-progress .progress-bar {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.seogo-progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.seogo-progress-text,
+.seogo-progress-percent {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Timeline Navigation */
+.seogo-timeline-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.seogo-timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  position: relative;
+}
+
+.seogo-timeline-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Timeline Marker */
+.seogo-timeline-marker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.seogo-timeline-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #999;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.seogo-timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: calc(100vw / 5 - 60px);
+  height: 3px;
+  background: #e9ecef;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Active and Completed States */
+.seogo-timeline-active .seogo-timeline-icon {
+  background: #007bff;
+  border-color: #007bff;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.seogo-timeline-completed .seogo-timeline-icon {
+  background: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.seogo-timeline-completed .seogo-timeline-line {
+  background: #28a745;
+}
+
+/* Timeline Content */
+.seogo-timeline-content {
+  text-align: center;
+  max-width: 150px;
+}
+
+.seogo-timeline-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.seogo-timeline-duration {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.seogo-timeline-active .seogo-timeline-title {
+  color: #007bff;
+}
+
+/* Step Details Card */
+.seogo-step-details {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.seogo-step-body {
+  padding: 3rem;
+}
+
+/* Step Info */
+.seogo-step-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.seogo-step-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.seogo-icon-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.seogo-icon-info {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+}
+
+.seogo-icon-warning {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+}
+
+.seogo-icon-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.seogo-icon-dark {
+  background: linear-gradient(135deg, #343a40, #23272b);
+}
+
+.seogo-step-meta {
+  flex: 1;
+}
+
+.seogo-step-badge {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.seogo-step-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.seogo-step-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.seogo-step-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Deliverables */
+.seogo-step-deliverables {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 4px solid #007bff;
+}
+
+.seogo-deliverables-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-deliverables-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Activities */
+.seogo-step-activities {
+  padding-left: 2rem;
+}
+
+.seogo-activities-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.seogo-activities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seogo-activity-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.seogo-activity-icon {
+  color: #28a745;
+  margin-right: 0.75rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.seogo-activity-text {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Workflow Stats */
+.seogo-workflow-stats {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.seogo-stat-card {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.seogo-stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.seogo-stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+}
+
+.seogo-stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.seogo-stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+  .seogo-workflow-steps {
+    padding: 4rem 0;
+  }
+
+  .seogo-timeline-nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .seogo-timeline-item {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  .seogo-timeline-marker {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .seogo-timeline-line {
+    display: none;
+  }
+
+  .seogo-step-body {
+    padding: 2rem;
+  }
+
+  .seogo-step-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .seogo-step-activities {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .seogo-timeline-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .seogo-step-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .seogo-step-title {
+    font-size: 1.5rem;
+  }
+
+  .seogo-workflow-stats {
+    padding: 2rem 1rem;
+  }
+
+  .seogo-stat-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .seogo-stat-number {
+    font-size: 1.5rem;
+  }
+}
+/* Contact Form Styles */
+.seogo-contact-form {
+  padding: 2rem 0;
+}
+
+.seogo-form-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Form Header */
+.seogo-form-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 2rem;
+  color: white;
+}
+
+.seogo-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.seogo-header-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.seogo-form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.seogo-form-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Form Body */
+.seogo-form-body {
+  padding: 2.5rem;
+}
+
+/* Alert Styles */
+.seogo-success-alert,
+.seogo-error-alert {
+  border: none;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.seogo-alert-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.seogo-alert-icon {
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.seogo-alert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-alert-text {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Form Groups */
+.seogo-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.seogo-form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seogo-label-icon {
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+/* Form Controls */
+.seogo-form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.seogo-form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+  background-color: #fff;
+}
+
+.seogo-form-control::placeholder {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.seogo-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Form Errors */
+.seogo-form-error {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15) !important;
+}
+
+.seogo-error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Radio Group */
+.seogo-radio-group {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.seogo-radio-item {
+  margin-bottom: 0;
+}
+
+.seogo-radio-item .form-check-input {
+  border: 2px solid #e9ecef;
+  margin-top: 0.2rem;
+}
+
+.seogo-radio-item .form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.seogo-radio-item .form-check-label {
+  font-size: 0.95rem;
+  color: #555;
+  margin-left: 0.5rem;
+}
+
+/* Submit Section */
+.seogo-form-submit {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f3f4;
+}
+
+.seogo-submit-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.seogo-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.4);
+}
+
+.seogo-submit-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Loading Spinner */
+.seogo-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.seogo-form-note {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-form-header {
+    padding: 1.5rem;
+  }
+
+  .seogo-header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seogo-form-title {
+    font-size: 1.5rem;
+  }
+
+  .seogo-form-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-radio-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .seogo-submit-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 2rem;
+  }
+
+  .seogo-alert-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seogo-header-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .seogo-form-control {
+    padding: 0.625rem 0.875rem;
+  }
+}
+
+/* Focus States for Accessibility */
+.seogo-form-control:focus,
+.seogo-submit-btn:focus,
+.seogo-radio-item .form-check-input:focus {
+  outline: none;
+}
+
+/* Custom Select Arrow */
+.seogo-form-control.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+/* Newsletter Signup Styles */
+.seogo-newsletter-signup {
+  padding: 2rem 0;
+}
+
+.seogo-newsletter-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.seogo-newsletter-body {
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Newsletter Header */
+.seogo-newsletter-header {
+  margin-bottom: 2rem;
+}
+
+.seogo-newsletter-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.seogo-newsletter-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.seogo-newsletter-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Benefits List */
+.seogo-newsletter-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seogo-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.seogo-benefit-icon {
+  color: #28a745;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+/* Alert Styles */
+.seogo-newsletter-alert {
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+.seogo-alert-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.seogo-alert-icon {
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.seogo-alert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-alert-text {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Form Styles */
+.seogo-newsletter-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.seogo-form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.seogo-form-label {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seogo-label-icon {
+  font-size: 0.9rem;
+}
+
+.seogo-input-group {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.seogo-input-addon {
+  background: white;
+  border: none;
+  color: #666;
+  border-radius: 0;
+}
+
+.seogo-email-input {
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.seogo-email-input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.seogo-input-error {
+  border-color: #dc3545 !important;
+}
+
+.seogo-error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffeb3b;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Submit Button */
+.seogo-submit-btn {
+  background: white;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.seogo-submit-btn:hover:not(:disabled) {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+}
+
+.seogo-submit-btn:disabled {
+  background: #6c757d;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Loading Spinner */
+.seogo-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  border-top: 2px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+/* Privacy Note */
+.seogo-privacy-note {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+/* Social Proof */
+.seogo-social-proof {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.seogo-subscribers-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.seogo-count-icon {
+  color: #ffd700;
+}
+
+.seogo-count-number {
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.seogo-count-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.seogo-testimonial {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.seogo-testimonial-stars {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-testimonial-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.seogo-testimonial-author {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Compact Version Styles */
+.seogo-newsletter-compact {
+  padding: 1rem 0;
+}
+
+.seogo-newsletter-header-compact {
+  margin-bottom: 1rem;
+}
+
+.seogo-newsletter-title-compact {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-newsletter-subtitle-compact {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.seogo-newsletter-alert-compact {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.seogo-input-group-compact {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.seogo-email-input-compact {
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+
+.seogo-email-input-compact:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.seogo-submit-btn-compact {
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+}
+
+.seogo-spinner-compact {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.seogo-error-compact {
+  font-size: 0.75rem;
+  color: #dc3545;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Size Variations */
+.seogo-newsletter-large .seogo-newsletter-body {
+  padding: 4rem 3rem;
+}
+
+.seogo-newsletter-large .seogo-newsletter-title {
+  font-size: 2.5rem;
+}
+
+.seogo-newsletter-small .seogo-newsletter-body {
+  padding: 2rem;
+}
+
+.seogo-newsletter-small .seogo-newsletter-title {
+  font-size: 1.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-newsletter-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-newsletter-title {
+    font-size: 1.5rem;
+  }
+
+  .seogo-newsletter-benefits {
+    text-align: center;
+  }
+
+  .seogo-benefit-item {
+    justify-content: center;
+  }
+
+  .seogo-alert-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seogo-subscribers-count {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seogo-newsletter-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .seogo-newsletter-title {
+    font-size: 1.25rem;
+  }
+
+  .seogo-submit-btn {
+    padding: 0.875rem 1.5rem;
+  }
+}
+/* Quote Request Styles */
+.seogo-quote-request {
+  padding: 2rem 0;
+}
+
+.seogo-quote-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Quote Header */
+.seogo-quote-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 2rem;
+  color: white;
+}
+
+.seogo-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.seogo-header-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.seogo-quote-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.seogo-quote-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Progress Bar */
+.seogo-progress-container {
+  position: relative;
+}
+
+.seogo-quote-progress {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.seogo-quote-progress .progress-bar {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.seogo-progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.seogo-progress-text,
+.seogo-progress-percent {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Quote Body */
+.seogo-quote-body {
+  padding: 3rem;
+}
+
+/* Step Content */
+.seogo-step-content {
+  margin-bottom: 2rem;
+}
+
+.seogo-step-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.seogo-step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-step-description {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* Form Styles */
+.seogo-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.seogo-form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.seogo-form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.seogo-form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.seogo-error-message {
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Option Cards */
+.seogo-option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.seogo-option-card {
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.seogo-option-card:hover {
+  border-color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);
+}
+
+.seogo-option-selected {
+  border-color: #007bff;
+  background: rgba(0, 123, 255, 0.05);
+}
+
+.seogo-option-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: white;
+  margin: 0 auto 1rem;
+}
+
+.seogo-option-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.seogo-option-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Website Cards */
+.seogo-website-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.seogo-website-card {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.seogo-website-card:hover {
+  border-color: #007bff;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.15);
+}
+
+.seogo-website-selected {
+  border-color: #007bff;
+  background: rgba(0, 123, 255, 0.05);
+}
+
+.seogo-website-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seogo-website-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.seogo-price-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Checkbox Grid */
+.seogo-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.seogo-checkbox-item {
+  margin-bottom: 0;
+}
+
+.seogo-checkbox-item .form-check-input {
+  border: 2px solid #e9ecef;
+  margin-top: 0.2rem;
+}
+
+.seogo-checkbox-item .form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.seogo-checkbox-item .form-check-label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-left: 0.5rem;
+}
+
+/* Radio Group */
+.seogo-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.seogo-radio-item {
+  margin-bottom: 0;
+}
+
+.seogo-radio-item .form-check-input {
+  border: 2px solid #e9ecef;
+  margin-top: 0.2rem;
+}
+
+.seogo-radio-item .form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.seogo-radio-item .form-check-label {
+  font-size: 0.95rem;
+  color: #555;
+  margin-left: 0.5rem;
+}
+
+/* Services Grid */
+.seogo-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.seogo-service-option {
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #f8f9fa;
+}
+
+.seogo-service-check {
+  margin-bottom: 0.5rem;
+}
+
+.seogo-service-check .form-check-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.seogo-service-desc {
+  color: #666;
+  font-size: 0.8rem;
+  margin-left: 1.5rem;
+}
+
+/* Navigation */
+.seogo-form-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid #f1f3f4;
+}
+
+.seogo-nav-btn {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.seogo-nav-btn:hover {
+  transform: translateY(-2px);
+}
+
+.seogo-prev-btn:hover {
+  box-shadow: 0 10px 25px rgba(108, 117, 125, 0.3);
+}
+
+.seogo-next-btn:hover {
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.seogo-submit-btn:hover:not(:disabled) {
+  box-shadow: 0 10px 25px rgba(40, 167, 69, 0.3);
+}
+
+/* Loading Spinner */
+.seogo-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+/* Success Page */
+.seogo-success-body {
+  padding: 4rem 2rem;
+}
+
+.seogo-success-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  margin: 0 auto 2rem;
+}
+
+.seogo-success-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.seogo-success-text {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.seogo-next-steps {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.seogo-next-steps h5 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.seogo-steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seogo-steps-list li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.seogo-new-quote-btn {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-quote-header {
+    padding: 1.5rem;
+  }
+
+  .seogo-header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seogo-quote-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-option-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seogo-website-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seogo-checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seogo-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seogo-form-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .seogo-nav-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .seogo-radio-group {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seogo-header-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .seogo-quote-title {
+    font-size: 1.5rem;
+  }
+
+  .seogo-success-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .seogo-success-title {
+    font-size: 1.5rem;
+  }
+}
+/* Button Base Styles */
+.seogo-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.seogo-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.seogo-btn:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Button Sizes */
+.seogo-btn-xs {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.seogo-btn-sm {
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.seogo-btn-md {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.seogo-btn-lg {
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.seogo-btn-xl {
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Button Variants */
+.seogo-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.seogo-btn-primary:hover:not(:disabled) {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #fff;
+}
+
+.seogo-btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.seogo-btn-secondary:hover:not(:disabled) {
+  background-color: #545b62;
+  border-color: #545b62;
+  color: #fff;
+}
+
+.seogo-btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.seogo-btn-success:hover:not(:disabled) {
+  background-color: #1e7e34;
+  border-color: #1e7e34;
+  color: #fff;
+}
+
+.seogo-btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.seogo-btn-danger:hover:not(:disabled) {
+  background-color: #c82333;
+  border-color: #c82333;
+  color: #fff;
+}
+
+.seogo-btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.seogo-btn-warning:hover:not(:disabled) {
+  background-color: #e0a800;
+  border-color: #e0a800;
+  color: #212529;
+}
+
+.seogo-btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.seogo-btn-info:hover:not(:disabled) {
+  background-color: #138496;
+  border-color: #138496;
+  color: #fff;
+}
+
+.seogo-btn-light {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #212529;
+}
+
+.seogo-btn-light:hover:not(:disabled) {
+  background-color: #e2e6ea;
+  border-color: #e2e6ea;
+  color: #212529;
+}
+
+.seogo-btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+
+.seogo-btn-dark:hover:not(:disabled) {
+  background-color: #23272b;
+  border-color: #23272b;
+  color: #fff;
+}
+
+/* Outline Variants */
+.seogo-btn-outline-primary {
+  background-color: transparent;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.seogo-btn-outline-primary:hover:not(:disabled) {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.seogo-btn-outline-secondary {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.seogo-btn-outline-secondary:hover:not(:disabled) {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.seogo-btn-outline-success {
+  background-color: transparent;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.seogo-btn-outline-success:hover:not(:disabled) {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.seogo-btn-outline-danger {
+  background-color: transparent;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.seogo-btn-outline-danger:hover:not(:disabled) {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+/* Gradient Variants */
+.seogo-btn-gradient-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-color: transparent;
+  color: #fff;
+}
+
+.seogo-btn-gradient-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.4);
+}
+
+.seogo-btn-gradient-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  border-color: transparent;
+  color: #fff;
+}
+
+.seogo-btn-gradient-success:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1e7e34, #155724);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(40, 167, 69, 0.4);
+}
+
+.seogo-btn-gradient-danger {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  border-color: transparent;
+  color: #fff;
+}
+
+.seogo-btn-gradient-danger:hover:not(:disabled) {
+  background: linear-gradient(135deg, #c82333, #bd2130);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(220, 53, 69, 0.4);
+}
+
+.seogo-btn-gradient-warning {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  border-color: transparent;
+  color: #212529;
+}
+
+.seogo-btn-gradient-warning:hover:not(:disabled) {
+  background: linear-gradient(135deg, #e0a800, #d39e00);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 193, 7, 0.4);
+}
+
+/* Button Modifiers */
+.seogo-btn-rounded {
+  border-radius: 50px;
+}
+
+.seogo-btn-block {
+  width: 100%;
+}
+
+.seogo-btn-animate:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.seogo-btn-animate:active {
+  transform: translateY(0);
+}
+
+/* Loading State */
+.seogo-btn-loading {
+  pointer-events: none;
+}
+
+.seogo-btn-loading .seogo-btn-content {
+  opacity: 0.7;
+}
+
+.seogo-btn-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seogo-spinner-border {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: seogo-spin 0.75s linear infinite;
+}
+
+@keyframes seogo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Icon Styles */
+.seogo-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.seogo-btn-icon-left {
+  margin-right: 0.5rem;
+  margin-left: -0.25rem;
+}
+
+.seogo-btn-icon-right {
+  margin-left: 0.5rem;
+  margin-right: -0.25rem;
+}
+
+.seogo-btn-icon-only {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  aspect-ratio: 1;
+}
+
+.seogo-btn-icon-only .seogo-btn-content {
+  display: none;
+}
+
+/* Floating Button */
+.seogo-btn-floating {
+  position: fixed;
+  z-index: 1050;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.seogo-btn-floating:hover:not(:disabled) {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.seogo-btn-floating-bottom-right {
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.seogo-btn-floating-bottom-left {
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.seogo-btn-floating-top-right {
+  top: 2rem;
+  right: 2rem;
+}
+
+.seogo-btn-floating-top-left {
+  top: 2rem;
+  left: 2rem;
+}
+
+/* Button Group */
+.seogo-btn-group {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.seogo-btn-group > .seogo-btn:not(:first-child) {
+  margin-left: -2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.seogo-btn-group > .seogo-btn:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.seogo-btn-group > .seogo-btn:hover {
+  z-index: 1;
+}
+
+.seogo-btn-group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.seogo-btn-group-vertical > .seogo-btn:not(:first-child) {
+  margin-top: -2px;
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.seogo-btn-group-vertical > .seogo-btn:not(:last-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0.375rem;
+}
+
+/* Button Group Sizes */
+.seogo-btn-group-sm > .seogo-btn {
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+}
+
+.seogo-btn-group-lg > .seogo-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Ripple Effect */
+.seogo-btn {
+  overflow: hidden;
+  position: relative;
+}
+
+.seogo-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.seogo-btn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 575.98px) {
+  .seogo-btn-floating {
+    width: 50px;
+    height: 50px;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .seogo-btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .seogo-btn-group > .seogo-btn {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0.375rem !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .seogo-btn-group > .seogo-btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .seogo-btn {
+    border-width: 3px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .seogo-btn {
+    transition: none;
+  }
+
+  .seogo-btn::before {
+    transition: none;
+  }
+
+  .seogo-spinner-border {
+    animation: none;
+  }
+}
+/* Card Base Styles */
+.seogo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Card Variants */
+.seogo-card-default {
+  background-color: #fff;
+  border-color: #e9ecef;
+}
+
+.seogo-card-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border-color: #007bff;
+}
+
+.seogo-card-secondary {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.seogo-card-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+  border-color: #28a745;
+}
+
+.seogo-card-danger {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+  border-color: #dc3545;
+}
+
+.seogo-card-warning {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  color: #212529;
+  border-color: #ffc107;
+}
+
+.seogo-card-info {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: white;
+  border-color: #17a2b8;
+}
+
+.seogo-card-dark {
+  background-color: #343a40;
+  color: white;
+  border-color: #343a40;
+}
+
+.seogo-card-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+/* Card Sizes */
+.seogo-card-xs {
+  font-size: 0.8rem;
+}
+
+.seogo-card-sm {
+  font-size: 0.9rem;
+}
+
+.seogo-card-md {
+  font-size: 1rem;
+}
+
+.seogo-card-lg {
+  font-size: 1.1rem;
+}
+
+.seogo-card-xl {
+  font-size: 1.2rem;
+}
+
+/* Card Shadows */
+.seogo-card-shadow-none {
+  box-shadow: none;
+}
+
+.seogo-card-shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.seogo-card-shadow-md {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.seogo-card-shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.seogo-card-shadow-xl {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+/* Card Modifiers */
+.seogo-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+.seogo-card-borderless {
+  border: none;
+}
+
+.seogo-card-rounded {
+  border-radius: 1rem;
+}
+
+.seogo-card-clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.seogo-card-clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.seogo-card-clickable:active {
+  transform: translateY(0);
+}
+
+/* Loading State */
+.seogo-card-loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.seogo-card-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.seogo-card-loading-overlay::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 0.25rem solid #e9ecef;
+  border-top: 0.25rem solid #007bff;
+  border-radius: 50%;
+  animation: seogo-spin 1s linear infinite;
+}
+
+/* Card Header */
+.seogo-card-header {
+  padding: 1.25rem 1.25rem 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.seogo-card-header-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.seogo-card-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.seogo-card-header-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.seogo-card-header-text {
+  flex: 1;
+}
+
+.seogo-card-title {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.seogo-card-subtitle {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.seogo-card-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Card Body */
+.seogo-card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.seogo-card-body-none {
+  padding: 0;
+}
+
+.seogo-card-body-sm {
+  padding: 0.75rem;
+}
+
+.seogo-card-body-lg {
+  padding: 2rem;
+}
+
+.seogo-card-body-xl {
+  padding: 3rem;
+}
+
+/* Card Footer */
+.seogo-card-footer {
+  padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.seogo-card-footer-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.seogo-card-footer-left {
+  text-align: left;
+}
+
+.seogo-card-footer-center {
+  text-align: center;
+}
+
+.seogo-card-footer-right {
+  text-align: right;
+}
+
+/* Card Image */
+.seogo-card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.seogo-card-image-top {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.seogo-card-image-bottom {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.seogo-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.seogo-card-image-overlay {
+  position: relative;
+}
+
+.seogo-card-image-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  z-index: 1;
+}
+
+.seogo-card-image-overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.seogo-card:hover .seogo-card-img {
+  transform: scale(1.05);
+}
+
+/* Card Stats */
+.seogo-card-stats {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.seogo-card-stats-horizontal {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.seogo-card-stats-vertical {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.seogo-card-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.seogo-card-stats-vertical .seogo-card-stat-item {
+  text-align: left;
+}
+
+.seogo-card-stat-icon {
+  width: 35px;
+  height: 35px;
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.seogo-card-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.seogo-card-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: inherit;
+  line-height: 1;
+}
+
+.seogo-card-stat-label {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 0.25rem;
+}
+
+/* Card Grid */
+.seogo-card-grid {
+  display: grid;
+  width: 100%;
+}
+
+.seogo-card-grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.seogo-card-grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.seogo-card-grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.seogo-card-grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.seogo-card-grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.seogo-card-grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.seogo-card-grid-gap-sm {
+  gap: 0.5rem;
+}
+.seogo-card-grid-gap-md {
+  gap: 1rem;
+}
+.seogo-card-grid-gap-lg {
+  gap: 1.5rem;
+}
+.seogo-card-grid-gap-xl {
+  gap: 2rem;
+}
+
+/* Responsive Grid */
+.seogo-card-grid-responsive.seogo-card-grid-cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.seogo-card-grid-responsive.seogo-card-grid-cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.seogo-card-grid-responsive.seogo-card-grid-cols-4 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Profile Card */
+.seogo-profile-card {
+  text-align: center;
+}
+
+.seogo-profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.seogo-profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 3px solid #e9ecef;
+}
+
+.seogo-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seogo-profile-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: inherit;
+}
+
+.seogo-profile-title {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+}
+
+.seogo-profile-description {
+  margin-bottom: 1.5rem;
+}
+
+.seogo-profile-description p {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.seogo-profile-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.seogo-profile-social-link {
+  width: 35px;
+  height: 35px;
+  background: #f8f9fa;
+  color: #666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.seogo-profile-social-link:hover {
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.seogo-profile-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767.98px) {
+  .seogo-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .seogo-card-header-content {
+    width: 100%;
+  }
+
+  .seogo-card-header-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .seogo-card-stats-horizontal {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .seogo-card-stats-horizontal .seogo-card-stat-item {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .seogo-card-grid-cols-2,
+  .seogo-card-grid-cols-3,
+  .seogo-card-grid-cols-4,
+  .seogo-card-grid-cols-5,
+  .seogo-card-grid-cols-6 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seogo-card-body,
+  .seogo-card-header,
+  .seogo-card-footer {
+    padding: 1rem;
+  }
+
+  .seogo-card-body-lg {
+    padding: 1.5rem;
+  }
+
+  .seogo-card-body-xl {
+    padding: 2rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .seogo-card-default {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #f7fafc;
+  }
+
+  .seogo-card-secondary {
+    background-color: #4a5568;
+    border-color: #718096;
+  }
+
+  .seogo-card-footer {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .seogo-card-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .seogo-card-stat-label {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .seogo-card {
+    border-width: 2px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .seogo-card {
+    transition: none;
+  }
+
+  .seogo-card-img {
+    transition: none;
+  }
+
+  .seogo-card-loading-overlay::after {
+    animation: none;
+  }
+}
+/* Loading Spinner Base Styles */
+.seogo-loading-spinner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* Spinner Sizes */
+.seogo-spinner-xs {
+  font-size: 0.75rem;
+}
+
+.seogo-spinner-sm {
+  font-size: 1rem;
+}
+
+.seogo-spinner-md {
+  font-size: 1.5rem;
+}
+
+.seogo-spinner-lg {
+  font-size: 2rem;
+}
+
+.seogo-spinner-xl {
+  font-size: 3rem;
+}
+
+/* Color Variants */
+.seogo-spinner-primary {
+  color: #007bff;
+}
+.seogo-spinner-secondary {
+  color: #6c757d;
+}
+.seogo-spinner-success {
+  color: #28a745;
+}
+.seogo-spinner-danger {
+  color: #dc3545;
+}
+.seogo-spinner-warning {
+  color: #ffc107;
+}
+.seogo-spinner-info {
+  color: #17a2b8;
+}
+.seogo-spinner-light {
+  color: #f8f9fa;
+}
+.seogo-spinner-dark {
+  color: #343a40;
+}
+.seogo-spinner-inherit {
+  color: inherit;
+}
+
+/* Speed Variants */
+.seogo-spinner-slow * {
+  animation-duration: 2s !important;
+}
+
+.seogo-spinner-normal * {
+  animation-duration: 1s !important;
+}
+
+.seogo-spinner-fast * {
+  animation-duration: 0.5s !important;
+}
+
+/* Default Spinner */
+.seogo-spinner-default {
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: seogo-spin 1s linear infinite;
+}
+
+/* Dots Spinner */
+.seogo-spinner-dots {
+  display: flex;
+  gap: 0.25em;
+}
+
+.seogo-dot {
+  width: 0.3em;
+  height: 0.3em;
+  background: currentColor;
+  border-radius: 50%;
+  animation: seogo-bounce 1.4s ease-in-out infinite;
+}
+
+.seogo-dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+.seogo-dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+/* Pulse Spinner */
+.seogo-spinner-pulse {
+  width: 1em;
+  height: 1em;
+  background: currentColor;
+  border-radius: 50%;
+  animation: seogo-pulse 1s ease-in-out infinite;
+}
+
+/* Ring Spinner */
+.seogo-spinner-ring {
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid rgba(0, 0, 0, 0.1);
+  border-left-color: currentColor;
+  border-radius: 50%;
+  animation: seogo-spin 1s linear infinite;
+}
+
+/* Wave Spinner */
+.seogo-spinner-wave {
+  display: flex;
+  gap: 0.1em;
+  align-items: flex-end;
+  height: 1em;
+}
+
+.seogo-wave-bar {
+  width: 0.15em;
+  height: 0.3em;
+  background: currentColor;
+  animation: seogo-wave 1s ease-in-out infinite;
+}
+
+.seogo-wave-bar:nth-child(1) {
+  animation-delay: 0s;
+}
+.seogo-wave-bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.seogo-wave-bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.seogo-wave-bar:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.seogo-wave-bar:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+/* Bounce Spinner */
+.seogo-spinner-bounce {
+  display: flex;
+  gap: 0.2em;
+  align-items: flex-end;
+}
+
+.seogo-bounce-ball {
+  width: 0.4em;
+  height: 0.4em;
+  background: currentColor;
+  border-radius: 50%;
+  animation: seogo-bounce-ball 0.6s ease-in-out infinite alternate;
+}
+
+.seogo-bounce-ball:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* Squares Spinner */
+.seogo-spinner-squares {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.1em;
+  width: 1em;
+  height: 1em;
+}
+
+.seogo-square {
+  background: currentColor;
+  animation: seogo-squares 1.2s ease-in-out infinite;
+}
+
+.seogo-square:nth-child(1) {
+  animation-delay: 0s;
+}
+.seogo-square:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.seogo-square:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.seogo-square:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+/* Bars Spinner */
+.seogo-spinner-bars {
+  display: flex;
+  gap: 0.15em;
+  align-items: center;
+}
+
+.seogo-bar {
+  width: 0.2em;
+  height: 1em;
+  background: currentColor;
+  animation: seogo-bars 1s ease-in-out infinite;
+}
+
+.seogo-bar:nth-child(1) {
+  animation-delay: 0s;
+}
+.seogo-bar:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.seogo-bar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Circle Spinner */
+.seogo-spinner-circle {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: conic-gradient(transparent, currentColor);
+  animation: seogo-spin 1s linear infinite;
+}
+
+/* Gradient Spinner */
+.seogo-spinner-gradient {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent, currentColor, transparent);
+  animation: seogo-spin 1s linear infinite;
+}
+
+/* Spinner Text */
+.seogo-spinner-text {
+  font-size: 0.8em;
+  color: currentColor;
+  text-align: center;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Overlay Spinner */
+.seogo-spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.seogo-spinner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seogo-spinner-top {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seogo-spinner-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Inline Spinner */
+.seogo-inline-spinner {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* Page Loader */
+.seogo-page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.seogo-page-loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.seogo-loader-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.seogo-loader-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seogo-loader-message {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Skeleton Loader */
+.seogo-skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.seogo-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  border-radius: 0.25rem;
+}
+
+.seogo-skeleton-animate {
+  animation: seogo-skeleton 1.5s ease-in-out infinite;
+}
+
+.seogo-skeleton-text {
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+
+.seogo-skeleton-title {
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.seogo-skeleton-avatar {
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.seogo-skeleton-card {
+  height: 200px;
+  border-radius: 0.75rem;
+}
+
+.seogo-skeleton-button {
+  height: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+/* Loading Button */
+.seogo-loading-btn.seogo-btn-loading {
+  pointer-events: none;
+  position: relative;
+}
+
+.seogo-loading-btn .seogo-btn-content.seogo-loading {
+  opacity: 0.7;
+}
+
+/* Progress Ring */
+.seogo-progress-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seogo-progress-svg {
+  transform: rotate(-90deg);
+}
+
+.seogo-progress-bg {
+  fill: none;
+  stroke: #e9ecef;
+}
+
+.seogo-progress-bar {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.seogo-progress-text {
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: currentColor;
+}
+
+.seogo-progress-primary {
+  color: #007bff;
+}
+.seogo-progress-success {
+  color: #28a745;
+}
+.seogo-progress-danger {
+  color: #dc3545;
+}
+.seogo-progress-warning {
+  color: #ffc107;
+}
+.seogo-progress-info {
+  color: #17a2b8;
+}
+
+/* Animations */
+@keyframes seogo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes seogo-bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+@keyframes seogo-pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes seogo-wave {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes seogo-bounce-ball {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1em);
+  }
+}
+
+@keyframes seogo-squares {
+  0%,
+  10%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes seogo-bars {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes seogo-skeleton {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .seogo-spinner-overlay {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .seogo-page-loader {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  }
+
+  .seogo-loader-message {
+    color: #e2e8f0;
+  }
+
+  .seogo-skeleton {
+    background: linear-gradient(90deg, #2d3748 25%, #4a5568 50%, #2d3748 75%);
+  }
+
+  .seogo-progress-bg {
+    stroke: #4a5568;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .seogo-loading-spinner *,
+  .seogo-skeleton-animate {
+    animation: none;
+  }
+
+  .seogo-spinner-default {
+    border-right-color: currentColor;
+    opacity: 0.5;
+  }
+}
+
+/* High Contrast */
+@media (prefers-contrast: high) {
+  .seogo-spinner-overlay {
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .seogo-skeleton {
+    background: #e0e0e0;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 575.98px) {
+  .seogo-page-loader-content {
+    gap: 1rem;
+  }
+
+  .seogo-loader-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .seogo-loader-message {
+    font-size: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .seogo-spinner-overlay,
+  .seogo-page-loader,
+  .seogo-loading-spinner {
+    display: none !important;
+  }
+}
+/* Modal Base Styles */
+.seogo-modal .modal-content {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Modal Variants */
+.seogo-modal-default .modal-content {
+  background-color: #fff;
+  color: #333;
+}
+
+.seogo-modal-primary .modal-content {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.seogo-modal-success .modal-content {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.seogo-modal-danger .modal-content {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+}
+
+.seogo-modal-warning .modal-content {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  color: #212529;
+}
+
+.seogo-modal-info .modal-content {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: white;
+}
+
+.seogo-modal-dark .modal-content {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Modal Animation */
+.seogo-modal-no-animation .modal.fade .modal-dialog {
+  transition: none;
+  transform: none;
+}
+
+/* Modal Header */
+.seogo-modal-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.seogo-modal-header-primary {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.seogo-modal-header-success {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.seogo-modal-header-danger {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.seogo-modal-header-warning {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.seogo-modal-header-info {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.seogo-modal-header-dark {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.seogo-modal-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.seogo-modal-header-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: currentColor;
+}
+
+.seogo-modal-header-text {
+  flex: 1;
+}
+
+.seogo-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: inherit;
+}
+
+.seogo-modal-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  opacity: 0.8;
+  color: inherit;
+}
+
+/* Close Button */
+.seogo-modal-header .btn-close {
+  background-size: 1.2em;
+  opacity: 0.8;
+}
+
+.seogo-modal-header .btn-close:hover {
+  opacity: 1;
+}
+
+/* Modal Body */
+.seogo-modal-body {
+  padding: 2rem;
+}
+
+.seogo-modal-body-none {
+  padding: 0;
+}
+
+.seogo-modal-body-sm {
+  padding: 1rem;
+}
+
+.seogo-modal-body-lg {
+  padding: 3rem;
+}
+
+.seogo-modal-body-xl {
+  padding: 4rem;
+}
+
+/* Modal Footer */
+.seogo-modal-footer {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.seogo-modal-footer-left {
+  justify-content: flex-start;
+}
+
+.seogo-modal-footer-center {
+  justify-content: center;
+}
+
+.seogo-modal-footer-right {
+  justify-content: flex-end;
+}
+
+/* Confirmation Modal */
+.seogo-confirm-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+.seogo-confirm-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.seogo-cancel-btn,
+.seogo-confirm-btn {
+  min-width: 100px;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Alert Modal */
+.seogo-alert-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+.seogo-alert-btn {
+  min-width: 100px;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Image Modal */
+.seogo-image-modal .modal-dialog {
+  max-width: 90vw;
+  margin: 1rem auto;
+}
+
+.seogo-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.seogo-modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+}
+
+.seogo-image-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.seogo-image-nav:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.seogo-image-prev {
+  left: 1rem;
+}
+
+.seogo-image-next {
+  right: 1rem;
+}
+
+.seogo-image-counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.seogo-image-description {
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.seogo-image-description p {
+  margin-bottom: 0;
+  text-align: center;
+  color: inherit;
+}
+
+/* Video Modal */
+.seogo-video-modal .modal-dialog {
+  max-width: 90vw;
+  margin: 1rem auto;
+}
+
+.seogo-video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.seogo-modal-video,
+.seogo-modal-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Loading States */
+.seogo-btn-spinner {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.seogo-spinner-border {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 0.15em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: seogo-spin 0.75s linear infinite;
+}
+
+/* Custom Backdrop */
+.seogo-modal .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+  .seogo-modal-header,
+  .seogo-modal-body,
+  .seogo-modal-footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .seogo-modal-body-lg {
+    padding: 2rem 1.5rem;
+  }
+
+  .seogo-modal-body-xl {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .seogo-modal-title {
+    font-size: 1.25rem;
+  }
+
+  .seogo-modal-header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .seogo-confirm-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .seogo-cancel-btn,
+  .seogo-confirm-btn,
+  .seogo-alert-btn {
+    width: 100%;
+  }
+
+  .seogo-image-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .seogo-image-prev {
+    left: 0.5rem;
+  }
+
+  .seogo-image-next {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seogo-modal .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .seogo-image-modal .modal-dialog,
+  .seogo-video-modal .modal-dialog {
+    margin: 0.5rem;
+    max-width: calc(100vw - 1rem);
+  }
+
+  .seogo-modal-header-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .seogo-modal-header,
+  .seogo-modal-body,
+  .seogo-modal-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .seogo-modal-default .modal-content {
+    background-color: #2d3748;
+    color: #f7fafc;
+  }
+
+  .seogo-modal-header {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .seogo-modal-footer {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .seogo-image-description {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .seogo-modal .modal-content {
+    border: 2px solid #000;
+  }
+
+  .seogo-modal-header,
+  .seogo-modal-footer {
+    border-width: 2px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .seogo-modal .modal.fade .modal-dialog {
+    transition: none;
+  }
+
+  .seogo-image-nav {
+    transition: none;
+  }
+
+  .seogo-spinner-border {
+    animation: none;
+    border-right-color: currentColor;
+    opacity: 0.5;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .seogo-modal,
+  .modal-backdrop {
+    display: none !important;
+  }
+}
+
+/* Focus States for Accessibility */
+.seogo-image-nav:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.seogo-modal-header .btn-close:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Custom Scrollbar for Modal Body */
+.seogo-modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.seogo-modal-body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.seogo-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.seogo-modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* Global Loading Overlay */
+.seogo-global-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
