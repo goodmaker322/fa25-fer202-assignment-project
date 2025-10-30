@@ -1,6 +1,6 @@
 // OrderManager.jsx
 // 📦 Quản lý đơn hàng (v6 - biểu đồ chỉ còn 5 trạng thái chuẩn tiếng Việt)
-// Cập nhật: 26/10/2025
+// Cập nhật: 26/10/2025 (Cập nhật style phân trang v2)
 
 import React, { useEffect, useState } from "react";
 import { Bar, Line, Pie } from "react-chartjs-2";
@@ -270,8 +270,7 @@ function OrderManager() {
                       <select
                         value={newStatus}
                         onChange={(e) => setNewStatus(e.target.value)}
-                        style={styles.select}
-                      >
+                        style={styles.select}>
                         <option value="pending">Chờ xử lý</option>
                         <option value="processing">Đang xử lý</option>
                         <option value="waiting_payment">
@@ -282,14 +281,12 @@ function OrderManager() {
                       </select>
                       <button
                         style={styles.saveBtn}
-                        onClick={() => handleUpdate(o.id)}
-                      >
+                        onClick={() => handleUpdate(o.id)}>
                         Lưu
                       </button>
                       <button
                         style={styles.cancelBtn}
-                        onClick={() => setEditing(null)}
-                      >
+                        onClick={() => setEditing(null)}>
                         Hủy
                       </button>
                     </>
@@ -301,14 +298,12 @@ function OrderManager() {
                 <td>
                   <button
                     style={styles.actionBtn}
-                    onClick={() => handleEdit(o)}
-                  >
+                    onClick={() => handleEdit(o)}>
                     <FaEdit />
                   </button>{" "}
                   <button
                     style={styles.deleteBtn}
-                    onClick={() => handleDelete(o.id)}
-                  >
+                    onClick={() => handleDelete(o.id)}>
                     <FaTrashAlt />
                   </button>
                 </td>
@@ -318,24 +313,22 @@ function OrderManager() {
         </table>
       </div>
 
-      {/* Pagination */}
+      {/* Pagination (Đã cập nhật) */}
       <div style={styles.pagination}>
         <button
           onClick={handlePrev}
           disabled={currentPage === 1}
-          style={styles.pageBtn}
-        >
-          ⬅️
+          style={styles.pageBtn}>
+          ◀ Trang trước
         </button>
-        <span>
+        <span style={styles.pageInfo}>
           Trang {currentPage}/{totalPages}
         </span>
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          style={styles.pageBtn}
-        >
-          ➡️
+          style={styles.pageBtn}>
+          Trang sau ▶
         </button>
       </div>
     </div>
@@ -380,8 +373,7 @@ const StatusBadge = ({ status }) => {
         gap: 4,
         fontSize: 13,
         fontWeight: 500,
-      }}
-    >
+      }}>
       {s.icon} {s.label}
     </span>
   );
@@ -472,20 +464,27 @@ const styles = {
     borderRadius: 4,
     cursor: "pointer",
   },
+  // --- Style phân trang đã cập nhật ---
   pagination: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     gap: 10,
-    marginTop: 20,
+    marginTop: 16, // Thay đổi từ 20 về 16
   },
   pageBtn: {
     background: "#43A047",
     color: "#fff",
     border: "none",
-    padding: "6px 10px",
+    padding: "8px 14px", // Thay đổi từ 6px 10px
     borderRadius: 6,
     cursor: "pointer",
+    fontWeight: 500, // Thêm
+  },
+  // Style mới cho text
+  pageInfo: {
+    fontWeight: 600,
+    color: "#2E7D32",
   },
 };
 

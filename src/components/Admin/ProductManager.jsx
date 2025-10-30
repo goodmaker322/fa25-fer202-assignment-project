@@ -1,7 +1,7 @@
 // ProductManager.jsx
 // Quản lý sản phẩm (CRUD, tìm kiếm, lọc, upload ảnh, phân trang)
 // Giao diện màu chủ đạo xanh lá nhạt & trắng
-// Cập nhật: 25/10/2025
+// Cập nhật: 25/10/2025 (Cập nhật style phân trang)
 
 import React, { useEffect, useState } from "react";
 
@@ -139,8 +139,7 @@ function ProductManager() {
         backgroundColor: "#f9fff9",
         minHeight: "100vh",
         color: "#2c3e50",
-      }}
-    >
+      }}>
       <h2
         style={{
           marginBottom: 20,
@@ -148,8 +147,7 @@ function ProductManager() {
           textAlign: "center",
           borderBottom: "2px solid #a5d6a7",
           paddingBottom: 10,
-        }}
-      >
+        }}>
         🛒 Quản lý Sản phẩm
       </h2>
 
@@ -163,8 +161,7 @@ function ProductManager() {
             color: "#2e7d32",
             marginBottom: 15,
             textAlign: "center",
-          }}
-        >
+          }}>
           {msg}
         </div>
       )}
@@ -177,8 +174,7 @@ function ProductManager() {
           gap: 10,
           alignItems: "center",
           marginBottom: 16,
-        }}
-      >
+        }}>
         <input
           placeholder="🔍 Tìm sản phẩm..."
           value={search}
@@ -197,8 +193,7 @@ function ProductManager() {
             padding: 8,
             borderRadius: 6,
             border: "1px solid #ccc",
-          }}
-        >
+          }}>
           <option value="all">Tất cả</option>
           <option value="active">Đang bán</option>
           <option value="inactive">Ẩn</option>
@@ -215,8 +210,7 @@ function ProductManager() {
             padding: "8px 14px",
             borderRadius: 6,
             cursor: "pointer",
-          }}
-        >
+          }}>
           ➕ Tạo sản phẩm mới
         </button>
       </div>
@@ -231,8 +225,7 @@ function ProductManager() {
             borderRadius: 10,
             padding: 16,
             background: "white",
-          }}
-        >
+          }}>
           <div style={{ display: "grid", gap: 10 }}>
             <input
               name="name"
@@ -314,8 +307,7 @@ function ProductManager() {
                 border: "none",
                 marginRight: 8,
                 cursor: "pointer",
-              }}
-            >
+              }}>
               💾 {editing ? "Lưu cập nhật" : "Tạo mới"}
             </button>
             <button
@@ -330,8 +322,7 @@ function ProductManager() {
                 padding: "8px 14px",
                 borderRadius: 6,
                 border: "none",
-              }}
-            >
+              }}>
               ❌ Hủy
             </button>
           </div>
@@ -348,8 +339,7 @@ function ProductManager() {
             borderCollapse: "collapse",
             borderColor: "#c8e6c9",
             background: "white",
-          }}
-        >
+          }}>
           <thead style={{ background: "#a5d6a7" }}>
             <tr>
               <th>ID</th>
@@ -383,8 +373,7 @@ function ProductManager() {
                   style={{
                     color: p.is_active ? "#2e7d32" : "#999",
                     fontWeight: "bold",
-                  }}
-                >
+                  }}>
                   {p.is_active ? "Đang bán" : "Ẩn"}
                 </td>
                 <td>
@@ -401,8 +390,7 @@ function ProductManager() {
                       borderRadius: 4,
                       cursor: "pointer",
                       marginRight: 8,
-                    }}
-                  >
+                    }}>
                     ✏️
                   </button>
                   <button
@@ -414,8 +402,7 @@ function ProductManager() {
                       padding: "4px 10px",
                       borderRadius: 4,
                       cursor: "pointer",
-                    }}
-                  >
+                    }}>
                     🗑️
                   </button>
                 </td>
@@ -425,7 +412,7 @@ function ProductManager() {
         </table>
       </div>
 
-      {/* Phân trang */}
+      {/* Phân trang (Đã cập nhật style) */}
       <div
         style={{
           marginTop: 16,
@@ -433,22 +420,41 @@ function ProductManager() {
           justifyContent: "center",
           alignItems: "center",
           gap: 10,
-        }}
-      >
+        }}>
         <button
           onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
           disabled={currentPage === 1}
-        >
-          ⬅️ Trang trước
+          style={{
+            background: "#43A047",
+            color: "#fff",
+            border: "none",
+            padding: "8px 14px",
+            borderRadius: 6,
+            cursor: "pointer",
+            fontWeight: 500,
+          }}>
+          ◀ Trang trước
         </button>
-        <span>
+        <span
+          style={{
+            fontWeight: 600,
+            color: "#2E7D32",
+          }}>
           Trang {currentPage}/{totalPages}
         </span>
         <button
           onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
           disabled={currentPage === totalPages}
-        >
-          Trang sau ➡️
+          style={{
+            background: "#43A047",
+            color: "#fff",
+            border: "none",
+            padding: "8px 14px",
+            borderRadius: 6,
+            cursor: "pointer",
+            fontWeight: 500,
+          }}>
+          Trang sau ▶
         </button>
       </div>
     </div>

@@ -1,6 +1,6 @@
 // 🌿 Home.jsx
 // Trang chủ: Includes HotProducts Carousel and handles AddToCart messages
-// Cập nhật: 26/10/2025
+// Cập nhật: 26/10/2025 (Cập nhật Footer - Thêm bản đồ)
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -11,6 +11,9 @@ import {
   FaBox,
   FaSignInAlt,
   FaSignOutAlt,
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
 } from "react-icons/fa";
 import ProductList from "./Product/ProductList"; // Main product list
 import HotProducts from "./Product/HotProducts"; // <-- 1. IMPORT HOTPRODUCTS
@@ -49,6 +52,15 @@ function Home({ user, onLogout, onAddToCart }) {
     setTimeout(() => setMsg(""), 3000); // Clear message
   };
 
+  // --- Style cho các link ở Footer ---
+  const footerLinkStyle = {
+    display: "block",
+    color: "#f9fff9",
+    textDecoration: "none",
+    marginBottom: "8px",
+    fontSize: "0.9rem",
+  };
+
   return (
     <div
       style={{
@@ -61,8 +73,7 @@ function Home({ user, onLogout, onAddToCart }) {
         flexDirection: "column",
         gap: "20px", // Adds space between Header, Msg, HotProducts, ProductList
         // --- END LAYOUT ADJUST ---
-      }}
-    >
+      }}>
       {/* Header */}
       <header
         style={{
@@ -76,8 +87,7 @@ function Home({ user, onLogout, onAddToCart }) {
           flexWrap: "wrap",
           position: "relative",
           flexShrink: 0, // Prevent header shrinking
-        }}
-      >
+        }}>
         <h1
           style={{
             color: "#2d6a4f",
@@ -85,8 +95,7 @@ function Home({ user, onLogout, onAddToCart }) {
             fontSize: "1.5rem",
             cursor: "pointer",
           }}
-          onClick={() => handleNavigate("/")}
-        >
+          onClick={() => handleNavigate("/")}>
           🌿Backlink Entity
         </h1>
         <div
@@ -97,39 +106,33 @@ function Home({ user, onLogout, onAddToCart }) {
             fontSize: "1.6rem",
             color: "#2d6a4f",
             cursor: "pointer",
-          }}
-        >
+          }}>
           <FaBars />
         </div>
         <nav
           className="nav-desktop"
-          style={{ display: "flex", alignItems: "center", gap: "15px" }}
-        >
+          style={{ display: "flex", alignItems: "center", gap: "15px" }}>
           {user ? (
             <>
               <button
                 className="nav-button"
-                onClick={() => handleNavigate("/profile")}
-              >
+                onClick={() => handleNavigate("/profile")}>
                 <FaUserCircle /> Hồ sơ
               </button>
               <button
                 className="nav-button"
-                onClick={() => handleNavigate("/cart")}
-              >
+                onClick={() => handleNavigate("/cart")}>
                 <FaShoppingCart /> Giỏ hàng
               </button>
               <button
                 className="nav-button"
-                onClick={() => handleNavigate("/orders")}
-              >
+                onClick={() => handleNavigate("/orders")}>
                 <FaBox /> Đơn hàng
               </button>
               {user.role === "admin" && (
                 <button
                   className="nav-button"
-                  onClick={() => handleNavigate("/admin")}
-                >
+                  onClick={() => handleNavigate("/admin")}>
                   ⚙️ Quản lý
                 </button>
               )}
@@ -140,8 +143,7 @@ function Home({ user, onLogout, onAddToCart }) {
           ) : (
             <button
               className="nav-button"
-              onClick={() => handleNavigate("/login")}
-            >
+              onClick={() => handleNavigate("/login")}>
               <FaSignInAlt /> Đăng nhập
             </button>
           )}
@@ -162,40 +164,34 @@ function Home({ user, onLogout, onAddToCart }) {
               padding: "10px",
               zIndex: 10,
               minWidth: "180px",
-            }}
-          >
+            }}>
             {user ? (
               <>
                 <button
                   className="dropdown-button"
-                  onClick={() => handleNavigate("/profile")}
-                >
+                  onClick={() => handleNavigate("/profile")}>
                   <FaUserCircle /> Hồ sơ
                 </button>
                 <button
                   className="dropdown-button"
-                  onClick={() => handleNavigate("/cart")}
-                >
+                  onClick={() => handleNavigate("/cart")}>
                   <FaShoppingCart /> Giỏ hàng
                 </button>
                 <button
                   className="dropdown-button"
-                  onClick={() => handleNavigate("/orders")}
-                >
+                  onClick={() => handleNavigate("/orders")}>
                   <FaBox /> Đơn hàng
                 </button>
                 <button
                   className="dropdown-button logout"
-                  onClick={handleLogout}
-                >
+                  onClick={handleLogout}>
                   <FaSignOutAlt /> Đăng xuất
                 </button>
               </>
             ) : (
               <button
                 className="dropdown-button"
-                onClick={() => handleNavigate("/login")}
-              >
+                onClick={() => handleNavigate("/login")}>
                 <FaSignInAlt /> Đăng nhập
               </button>
             )}
@@ -207,8 +203,7 @@ function Home({ user, onLogout, onAddToCart }) {
       {msg && (
         <div
           className={`cart-message ${msg.includes("Lỗi") ? "error" : ""}`}
-          style={{ flexShrink: 0 }}
-        >
+          style={{ flexShrink: 0 }}>
           {" "}
           {/* Prevent shrinking */}
           <span>{msg}</span>
@@ -224,6 +219,120 @@ function Home({ user, onLogout, onAddToCart }) {
       {/* Pass the WRAPPER function down */}
       <ProductList user={user} onAddToCart={handleAddToCartWrapper} />
       {/* ----------------------------- */}
+
+      {/* ========== FOOTER START ========== */}
+      <footer
+        style={{
+          backgroundColor: "#2d6a4f", // Nền xanh đậm
+          color: "#f9fff9", // Chữ sáng
+          padding: "30px 25px",
+          marginTop: "auto", // Quan trọng: Đẩy footer xuống cuối nếu trang ngắn
+          borderRadius: "8px", // Giống header
+          flexShrink: 0, // Ngăn co rút
+        }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            flexWrap: "wrap",
+            gap: "20px",
+            marginBottom: "20px",
+          }}>
+          {/* Cột 1: Giới thiệu */}
+          <div style={{ flex: "1 1 250px", minWidth: "200px" }}>
+            <h4
+              style={{
+                margin: 0,
+                marginBottom: "10px",
+                color: "#c8f7c5", // Xanh lá nhạt
+              }}>
+              🌿 Backlink Entity
+            </h4>
+            <p style={{ fontSize: "0.9rem", lineHeight: 1.6 }}>
+              Chúng tôi cung cấp các giải pháp và sản phẩm thân thiện với môi
+              trường, hướng tới một tương lai bền vững.
+            </p>
+          </div>
+
+          {/* Cột 2: Địa chỉ công ty (ĐÃ THAY THẾ) */}
+          <div style={{ flex: "1 1 250px", minWidth: "200px" }}>
+            <h5
+              style={{
+                margin: 0,
+                marginBottom: "10px",
+                color: "#c8f7c5",
+              }}>
+              Địa chỉ công ty
+            </h5>
+            {/* LƯU Ý: Link 'src' bên dưới KHÔNG HỢP LỆ. 
+              Bạn cần thay thế bằng link "Nhúng bản đồ" (Embed) thực tế từ Google Maps.
+            */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.710699666518!2d105.52329867400861!3d21.01278168832957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc60e7d3f19%3A0x2be9d7d0b5abcbf4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgSMOgIE7hu5lp!5e1!3m2!1svi!2s!4v1761638306820!5m2!1svi!2s"
+              width="100%" // Đã sửa (để vừa cột)
+              height="200" // Đã sửa (chiều cao hợp lý)
+              style={{ border: 0, borderRadius: "8px" }} // Đã sửa cú pháp
+              allowFullScreen={true} // Đã sửa cú pháp
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade" // Đã sửa cú pháp
+            ></iframe>
+          </div>
+
+          {/* Cột 3: Theo dõi */}
+          <div style={{ flex: "1 1 150px", minWidth: "150px" }}>
+            <h5
+              style={{
+                margin: 0,
+                marginBottom: "10px",
+                color: "#c8f7c5",
+              }}>
+              Thông tin liên hệ
+            </h5>
+            <a
+              href="https://www.whatsapp.com"
+              style={footerLinkStyle}
+              className="footer-link"
+              target="_blank" // Thêm target="_blank" để mở link ở tab mới
+              rel="noopener noreferrer" // Bảo mật khi dùng target="_blank"
+            >
+              <FaWhatsapp /> _Hotline: 0912345678
+            </a>
+            <a
+              href="https://www.facebook.com"
+              style={footerLinkStyle}
+              className="footer-link"
+              target="_blank" // Thêm target="_blank" để mở link ở tab mới
+              rel="noopener noreferrer" // Bảo mật khi dùng target="_blank"
+            >
+              <FaFacebook /> _Facebook
+            </a>
+            <a
+              href="https://www.instagram.com"
+              style={footerLinkStyle}
+              className="footer-link"
+              target="_blank" // Thêm target="_blank" để mở link ở tab mới
+              rel="noopener noreferrer" // Bảo mật khi dùng target="_blank"
+            >
+              <FaInstagram />
+              _Instagram
+            </a>
+          </div>
+        </div>
+
+        {/* Dòng Copyright */}
+        <div
+          style={{
+            textAlign: "center",
+            borderTop: "1px solid #4a7c65", // Border màu xanh nhạt hơn
+            paddingTop: "20px",
+            marginTop: "10px",
+            fontSize: "0.9rem",
+            color: "#a5d6a7", // Chữ xanh lá cây nhạt
+          }}>
+          © 2025 Backlink Entity by Damtq. All Rights Reserved.
+        </div>
+      </footer>
+      {/* ========== FOOTER END ========== */}
 
       {/* CSS */}
       <style>{`
@@ -253,8 +362,17 @@ function Home({ user, onLogout, onAddToCart }) {
 
         /* Remove default margin from HotProducts container if needed */
         .hot-products-container {
-           margin-top: 0 !important; /* Override default margin if necessary */
-           margin-bottom: 0 !important;
+            margin-top: 0 !important; /* Override default margin if necessary */
+            margin-bottom: 0 !important;
+        }
+
+        /* --- CSS CHO FOOTER --- */
+        .footer-link {
+           transition: color 0.2s ease;
+        }
+        .footer-link:hover {
+           color: #c8f7c5; /* Hover màu xanh lá nhạt */
+           text-decoration: underline;
         }
       `}</style>
     </div>
