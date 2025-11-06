@@ -203,6 +203,17 @@
       "status": "active",
       "created_at": "2025-10-26T04:16:27.033Z",
       "updated_at": "2025-10-26T04:16:27.033Z"
+    },
+    {
+      "id": "cd57",
+      "username": "user116",
+      "password": "$2b$10$kh601Labho99vTe9wRspqOVM7rw75Bdp4h67w/LOopAEnoXEMcSzK",
+      "full_name": "tran van tuan",
+      "email": "user123@gmail.com",
+      "role": "user",
+      "created_at": "2025-11-06T09:02:44.652Z",
+      "updated_at": "2025-11-06T09:02:44.652Z",
+      "status": "active"
     }
   ],
   "products": [

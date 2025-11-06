@@ -1,7 +1,3 @@
-// ProductList.jsx
-// Fetches, Filters (Category/Type by Name, Price, Search), Paginates, Displays
-// Cập nhật: 26/10/2025
-
 import React, { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingCart, FaSearch } from "react-icons/fa";
@@ -23,7 +19,7 @@ const serviceTypes = [
   { id: "seo", name: "SEO" }, // Keyword: 'seo'
 ];
 
-// Khoảng giá (giữ nguyên)
+// Khoảng giá
 const priceRanges = [
   { id: "all", name: "Tất cả giá", min: 0, max: Infinity },
   { id: "0-1m", name: "Dưới 1 triệu", min: 0, max: 999999 },
@@ -34,7 +30,6 @@ const priceRanges = [
 // --- End Filter Options ---
 
 function ProductList({ user, onAddToCart }) {
-  // --- States (remain the same) ---
   const [allProducts, setAllProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -44,9 +39,8 @@ function ProductList({ user, onAddToCart }) {
   const [selectedPriceRange, setSelectedPriceRange] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
-  // --- End States ---
 
-  // Fetching Data (remains the same)
+  // Fetching Data
   useEffect(() => {
     setLoading(true);
     fetch("http://localhost:9999/products?is_active=true")
@@ -61,7 +55,6 @@ function ProductList({ user, onAddToCart }) {
       .finally(() => setLoading(false));
   }, []);
 
-  // --- **UPDATED FILTERING LOGIC BY NAME KEYWORDS** ---
   useEffect(() => {
     let tempFiltered = [...allProducts];
 
@@ -69,7 +62,6 @@ function ProductList({ user, onAddToCart }) {
     if (selectedCategory !== "all") {
       const categoryObj = categories.find((cat) => cat.id === selectedCategory);
       if (categoryObj) {
-        // Lấy keyword từ tên category, ví dụ: 'gói cơ bản'
         const categoryKeyword = categoryObj.name.toLowerCase();
         tempFiltered = tempFiltered.filter((p) =>
           p.name.toLowerCase().includes(categoryKeyword)
@@ -79,7 +71,6 @@ function ProductList({ user, onAddToCart }) {
 
     // 2. Filter by Service Type (using keyword "backlink" or "seo" in product NAME)
     if (selectedServiceType !== "all") {
-      // selectedServiceType ID chính là keyword ('backlink' hoặc 'seo')
       const typeKeyword = selectedServiceType.toLowerCase();
       tempFiltered = tempFiltered.filter((p) =>
         p.name.toLowerCase().includes(typeKeyword)
@@ -92,7 +83,7 @@ function ProductList({ user, onAddToCart }) {
       if (range) {
         // Chuyển đổi giá sản phẩm sang số trước khi so sánh, phòng trường hợp data có giá dạng string
         tempFiltered = tempFiltered.filter((p) => {
-          const priceNum = Number(p.price); // Convert price to number
+          const priceNum = Number(p.price);
           return (
             !isNaN(priceNum) && priceNum >= range.min && priceNum <= range.max
           );
@@ -112,7 +103,7 @@ function ProductList({ user, onAddToCart }) {
     }
 
     setFilteredProducts(tempFiltered);
-    setCurrentPage(1); // Reset page on any filter change
+    setCurrentPage(1);
   }, [
     searchTerm,
     selectedCategory,
@@ -120,9 +111,8 @@ function ProductList({ user, onAddToCart }) {
     selectedPriceRange,
     allProducts,
   ]);
-  // --- END UPDATED FILTERING ---
 
-  // Pagination Logic (remains the same)
+  // Pagination Logic
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentProducts = filteredProducts.slice(
@@ -132,7 +122,6 @@ function ProductList({ user, onAddToCart }) {
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
 
   const handlePageChange = (page) => {
-    /* ... same as before ... */
     setCurrentPage(page);
     const listElement = document.querySelector(".product-list-container");
     if (listElement) {
@@ -147,18 +136,17 @@ function ProductList({ user, onAddToCart }) {
       </h2>
 
       <div className="list-layout">
-        {/* --- Left Menu (Updated Categories Title) --- */}
+        {/* --- Left Menu --- */}
         <aside className="left-menu integrated">
           {/* Categories */}
           <div className="filter-group">
-            <h3>Gói Dịch Vụ</h3> {/* Updated Title */}
+            <h3>Gói Dịch Vụ</h3>
             <ul>
               {categories.map((category) => (
                 <li
                   key={category.id}
                   className={selectedCategory === category.id ? "active" : ""}
-                  onClick={() => setSelectedCategory(category.id)}
-                >
+                  onClick={() => setSelectedCategory(category.id)}>
                   {category.name}
                 </li>
               ))}
@@ -173,8 +161,7 @@ function ProductList({ user, onAddToCart }) {
                 <li
                   key={type.id}
                   className={selectedServiceType === type.id ? "active" : ""}
-                  onClick={() => setSelectedServiceType(type.id)}
-                >
+                  onClick={() => setSelectedServiceType(type.id)}>
                   {type.name}
                 </li>
               ))}
@@ -189,16 +176,13 @@ function ProductList({ user, onAddToCart }) {
                 <li
                   key={range.id}
                   className={selectedPriceRange === range.id ? "active" : ""}
-                  onClick={() => setSelectedPriceRange(range.id)}
-                >
+                  onClick={() => setSelectedPriceRange(range.id)}>
                   {range.name}
                 </li>
               ))}
             </ul>
           </div>
         </aside>
-        {/* --- End Left Menu --- */}
-
         {/* Right Content (Search, Grid, Pagination - No structural changes needed) */}
         <div className="right-product-content">
           <div className="search-bar-container integrated">
@@ -232,21 +216,18 @@ function ProductList({ user, onAddToCart }) {
                         />
                       </div>
                       <h3 className="product-card-name">{p.name}</h3>
-                      {/* Ensure price is treated as a number */}
                       <p className="product-card-price">
                         💰 {Number(p.price).toLocaleString()}đ
                       </p>
                       <div className="product-actions">
                         <Link
                           to={`/product/${p.id}`}
-                          className="btn-product btn-view-details"
-                        >
+                          className="btn-product btn-view-details">
                           🔍 Xem chi tiết
                         </Link>
                         <button
                           onClick={() => onAddToCart(p)}
-                          className="btn-product btn-add-cart"
-                        >
+                          className="btn-product btn-add-cart">
                           <FaShoppingCart /> Thêm vào giỏ
                         </button>
                       </div>
@@ -265,8 +246,7 @@ function ProductList({ user, onAddToCart }) {
                         className={`page-btn ${
                           currentPage === page ? "active" : ""
                         }`}
-                        disabled={currentPage === page}
-                      >
+                        disabled={currentPage === page}>
                         {page}
                       </button>
                     )
@@ -278,7 +258,6 @@ function ProductList({ user, onAddToCart }) {
         </div>
       </div>
 
-      {/* --- CSS (Remains the same as the previous version) --- */}
       <style>{`
         /* Keep all previous styles */
         .product-list-container { padding: 20px 0; }
